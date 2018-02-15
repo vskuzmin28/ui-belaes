@@ -169,10 +169,10 @@ button {
     border-color: #e64c65;
   }
   .bg-true {
-    background: #11a8ab;
+    background: #11a8ab !important;
   }
   .bg-false {
-    background: #e64c65;
+    background: #e64c65 !important;
   }
   .btn-small {
     display: inline-block !important;
@@ -387,73 +387,6 @@ button {
   margin-left: 14px;
   font-size: 14px;
 }
-.auth {
-  border-radius: 30%;
-  display: none;
-  position: absolute;
-  width: 300px;
-  height: 320px;
-  background: url('../img/logo.png') no-repeat bottom center;
-  text-align: center;
-  color: #fff;
-}
-.auth h2 {
-  margin-bottom: 30px;
-  font: 20px 'pt_sansbold';
-  text-transform: uppercase;
-}
-.auth input[type="password"] {
-  margin-top: 50px;
-  padding: 0 10px;
-  width: 160px;
-  height: 30px;
-  background: #1f253d;
-  border: 1px solid #50597b;
-  border-radius: 4px;
-  content: "******";
-  font: 14px 'pt_sansregular';
-  color: #fff;
-  margin-bottom: 20px;
-}
-.auth input[type="password"]::-webkit-input-placeholder {
-  font: 14px 'pt_sansitalic';
-  color: #fff;
-}
-.auth input[type="password"]:invalid {
-  border-color: #e64c65;
-}
-.auth input[type="password"]:valid:required {
-  border-color: #11a8ab !important;
-}
-.auth input[type="password"]:valid:required + button[type="submit"] {
-  background: #11a8ab;
-  border-color: #11a8ab;
-}
-.auth button[type="submit"] {
-  background: #50597b;
-  border: 1px solid #50597b;
-  border-radius: 4px;
-  color: #fff;
-}
-.auth button[type="submit"]:hover {
-  background: #1f253d;
-}
-.auth__denied {
-  display: none;
-  margin-top: 110px;
-  font: 24px 'pt_sansregular';
-  color: #fff;
-  text-align: center;
-}
-.auth__close {
-  top: -200px;
-  right: -340px;
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: url('../img/close.png') no-repeat;
-}
 .block__big-journal {
   position: absolute;
   margin-top: 8px !important;
@@ -537,6 +470,73 @@ button {
   height: 40px !important;
   line-height: 40px !important;
 }
+.auth {
+  border-radius: 30%;
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 320px;
+  background: url('../img/logo.png') no-repeat bottom center;
+  text-align: center;
+  color: #fff;
+}
+.auth h2 {
+  margin-bottom: 30px;
+  font: 20px 'pt_sansbold';
+  text-transform: uppercase;
+}
+.auth input[type="password"] {
+  margin-top: 50px;
+  padding: 0 10px;
+  width: 160px;
+  height: 30px;
+  background: #1f253d;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  content: "******";
+  font: 14px 'pt_sansregular';
+  color: #fff;
+  margin-bottom: 20px;
+}
+.auth input[type="password"]::-webkit-input-placeholder {
+  font: 14px 'pt_sansitalic';
+  color: #fff;
+}
+.auth input[type="password"]:invalid {
+  border-color: #e64c65;
+}
+.auth input[type="password"]:valid:required {
+  border-color: #11a8ab !important;
+}
+.auth input[type="password"]:valid:required + button[type="submit"] {
+  background: #11a8ab;
+  border-color: #11a8ab;
+}
+.auth button[type="submit"] {
+  background: #50597b;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  color: #fff;
+}
+.auth button[type="submit"]:hover {
+  background: #1f253d;
+}
+.auth__denied {
+  display: none;
+  margin-top: 110px;
+  font: 24px 'pt_sansregular';
+  color: #fff;
+  text-align: center;
+}
+.auth__close {
+  top: -200px;
+  right: -340px;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('../img/close.png') no-repeat;
+}
 .block__cabintes table tr:nth-child(1) td {
   width: 90px;
   text-align: center !important;
@@ -549,6 +549,18 @@ button {
   text-align: left !important;
   vertical-align: middle;
   height: 20px;
+}
+.current-operation {
+  margin-top: 70px;
+  position: absolute;
+  height: 16px;
+}
+.current-operation p {
+  font: 14px 'pt_sansregular';
+  color: #fff;
+}
+.current-operation p span {
+  font-family: 'pt_sansbold';
 }
 .tabs {
   height: auto;
@@ -658,17 +670,220 @@ input:checked.checkbox + label.checkbox-label:before {
   content: "";
   border-radius: 3px;
 }
-.current-operation {
-  margin-top: 70px;
-  position: absolute;
-  height: 16px;
+.engines {
+  height: auto;
 }
-.current-operation p {
+.engine-col {
+  margin: 10px 0 0 0;
+  margin-left: 2px;
+  margin-right: 10px;
+  padding: 10px;
+  float: left;
+  width: 300px;
+  color: #fff;
+  border: 1px solid #4e5778;
+  border-radius: 4px;
+  font: 16px 'pt_sansbold';
+}
+.engine-col:nth-child(3n+3) {
+  margin-left: 0;
+  margin-right: 0;
+}
+.engine-col-field {
+  margin-top: 10px;
+  height: auto;
+  overflow: hidden;
+}
+.engine-col-field p {
+  float: left;
+  font: 16px 'pt_sansregular';
+  line-height: 30px;
+}
+.progress-bar-body {
+  position: relative;
+  margin-top: 6px;
+  float: right;
+  height: 20px;
+  width: 140px;
+  background: #394264;
+  border-radius: 4px;
+}
+.progress-bar__poehali {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #50597b;
+  border-radius: 4px 0 0 4px;
+}
+.progress-bar-body-description {
+  z-index: 60;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font: 14px 'pt_sansregular';
+  text-align: center;
+  line-height: 18px;
+}
+.engine-col-left {
+  float: left;
+  width: 100px;
+}
+.engine-di-text-indication-right-col {
+  float: right;
+  width: 180px;
+}
+.engine-di-text-indication {
+  margin-bottom: 12px;
+  display: block;
+  float: right;
+  width: 180px;
+  height: 30px;
+  background: #394264;
+  border-radius: 4px;
+  font: 14px 'pt_sansbold';
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.engine-di-text-indication:last-child {
+  margin-bottom: 0;
+}
+.engine-di-text-indication-alarm {
+  background: #e64c65;
+}
+.engine-di-text-indication-gateway {
+  margin-top: 10px;
+}
+.engine-checkbox-margin {
+  margin: 18px 0 0 0px;
+}
+input.engine-checkbox {
+  display: none;
+}
+label.engine-checkbox-label {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #1f253d;
+  border: 1px solid #50597b;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 4px;
+}
+input:checked.engine-checkbox + label.engine-checkbox-label:before {
+  margin: 6px 0 0 6px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #11a8ab;
+  border-radius: 4px;
+  content: "";
+}
+.engines-buttons {
+  height: 30px;
+}
+.bg-true {
+  background: #11a8ab !important;
+}
+.bg-true:hover,
+.bg-true:focus {
+  background: #11a8ab !important;
+}
+.bg-false {
+  background: #e64c65 !important;
+}
+.bg-false:hover,
+.bg-false:focus {
+  background: #e64c65 !important;
+}
+.engines-buttons-small {
+  margin: 20px 10px 0 0;
+  width: 100px;
+  border: 0;
+  height: 30px;
+  line-height: 2px !important;
+}
+.engine-switch {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 30px;
+  overflow: hidden;
+  float: left;
+}
+.engine-switch p {
+  float: left;
   font: 14px 'pt_sansregular';
   color: #fff;
+  line-height: 26px;
+  margin-right: 10px;
 }
-.current-operation p span {
-  font-family: 'pt_sansbold';
+.engine-switch p:last-child {
+  margin-left: 10px;
+}
+.engine-switch input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.engine-switch label {
+  float: left;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: #50597b;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.engine-switch label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #394264;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.engine-switch input:checked + label {
+  background: #11a8ab;
+}
+.engine-switch input:checked + label:after {
+  left: calc(92%);
+  transform: translateX(-100%);
+  background: #fff;
+}
+.engine-switch label:active:after {
+  width: 130px;
+}
+.engine-place-sh {
+  margin-top: 21px;
+  float: right;
+  width: 170px;
+  height: 30px;
+  overflow: hidden;
+}
+.engine-place-sh p {
+  float: left;
+  font: 14px 'pt_sansregular';
+  color: #fff;
+  line-height: 24px;
+}
+.read-write-status {
+  margin-top: 22px;
+  float: left;
+  height: 24px;
+  padding: 0 10px;
+  background: #f8f511;
+  font: 14px 'pt_sansregular';
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #000;
+  border-radius: 4px;
 }
 .gateway {
   display: block;
