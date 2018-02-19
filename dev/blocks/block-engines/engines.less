@@ -198,6 +198,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	}
 
 	label {
+		overflow: hidden;
 		float: left;
 		cursor: pointer;
 		text-indent: -9999px;
@@ -218,7 +219,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		height: 20px;
 		background: #394264;
 		border-radius: 90px;
-		transition: 0.3s;
+		transition: 0.4s;
 	}
 
 	input:checked + label {
@@ -300,6 +301,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	}
 
 	label {
+		overflow: hidden;
 		float: left;
 		cursor: pointer;
 		text-indent: -9999px;
@@ -320,7 +322,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		height: 15px;
 		background: @white;
 		border-radius: 90px;
-		transition: 0.3s;
+		transition: 0.4s;
 	}
 
 	input:checked + label {
@@ -406,4 +408,63 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	line-height: 20px;
 
 	border-radius: 4px;
+}
+
+
+// page ustavki
+
+// container
+
+.engine-ust-field-container {
+	margin: 30px auto;
+	width: 500px;
+}
+
+// field
+
+.engine-ust-field {
+	margin: 10px 10px 10px 4px;
+	width: 500px;
+	height: 25px;
+
+	p {
+		margin-right: 10px;
+		width: 170px;
+		float: left;
+		font: 14px @pt-regular;
+		color: @white;
+		line-height: 25px;
+	}
+
+	input[type=text] {
+		padding: 0 10px;
+
+		margin-right: 6px;
+		float: left;
+		width: 50px;
+		height: 25px;
+
+		font: 14px @pt-regular;
+		color: @black;
+		text-align: center;
+		line-height: 23px !important;
+
+		border-radius: 4px;
+		border: 0;
+	}
+
+	button {
+		float: left;
+		margin-left: 16px;
+		width: 90px;
+		height: 25px;
+
+		border-radius: 4px;
+		background: @green;
+
+		font: 14px @pt-bold;
+		text-transform: uppercase;
+		color: @white;
+	}
+
 }
