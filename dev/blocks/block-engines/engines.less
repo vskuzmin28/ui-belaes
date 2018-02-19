@@ -5,6 +5,7 @@
 }
 
 .engine-col {
+	position: relative;
 	margin: 10px 0 0 0;
 	margin-left: 2px;
 	margin-right: 10px;
@@ -12,6 +13,8 @@
 	float: left;
 	width:  300px;
 	color: @white;
+
+	overflow: hidden;
 
 	border: 1px solid #4e5778;
 	border-radius: 4px;
@@ -251,16 +254,156 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 }
 
 .read-write-status {
-	margin-top: 22px;
+	margin-top: 23px;
 	float: left;
 	height: 24px;
 	padding: 0 10px;
 	background: @yellow;
 
-	font: 14px @pt-regular;
+	font: 12px @pt-regular;
 	text-transform: uppercase;
-	line-height: 22px;
+	line-height: 24px;
 	color: @black;
+
+	border-radius: 4px;
+}
+
+.engine-control-col-field {
+	margin-left: -70px;
+	margin-top: 18px;
+	overflow: hidden;
+	width: 280px;
+}
+
+.engine-control-direction {
+	margin-top: 2px;
+	float: left;
+	width: 190px;
+
+	p {
+		float: left;
+		font: 12px @pt-bold;
+		color: @white;
+		line-height: 24px;
+		margin-right: 10px;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-left: 10px;
+		}
+	}
+
+	input[type=checkbox]{
+		height: 0;
+		width: 0;
+		visibility: hidden;
+	}
+
+	label {
+		float: left;
+		cursor: pointer;
+		text-indent: -9999px;
+		width: 60px;
+		height: 25px;
+		background: #50597b;
+		display: block;
+		border-radius: 100px;
+		position: relative;
+	}
+
+	label:after {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 25px;
+		height: 15px;
+		background: @white;
+		border-radius: 90px;
+		transition: 0.3s;
+	}
+
+	input:checked + label {
+		background: @green;
+	}
+
+	input:checked + label:after {
+		left: calc(100% - 8px);
+		transform: translateX(-100%);
+		background: #fff;
+	}
+
+	label:active:after {
+		width: 130px;
+	}
+
+}
+
+.engine-signal {
+	margin-top: 2px;
+	float: left;
+	margin-left: 5px;
+	width: 25px;
+	height: 25px;
+
+	border-radius: 4px;
+	background: @blue;
+
+	img {
+		margin: 4px 0 0 5px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		//-webkit-filter: brightness(10);
+	}
+
+}
+
+.engine-signal-alarm-true {
+	background: @red;
+
+	img {
+		//-webkit-filter: brightness(10);
+	}
+
+}
+
+.engine-signal-terminal-true {
+	background: @green;
+
+	img {
+		//-webkit-filter: brightness(10) !important;
+	}
+
+}
+
+.engine-col-active {
+	margin-top: 8px !important;
+	margin-left: 0px !important;
+	//position: absolute;
+	margin-left: 0px;
+	border-color: @green;
+	border: 2px solid @green;
+
+	&:nth-child(3n+3) {
+		margin-left: 0px !important;
+		margin-right: 0;
+	}
+
+}
+
+.engine-condition {
+	top: 11px;
+	right: 10px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: @blue;
+
+	font: 14px @pt-bold;
+	color: @white;
+	text-align: center;
+	line-height: 20px;
 
 	border-radius: 4px;
 }

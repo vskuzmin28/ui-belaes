@@ -9,16 +9,18 @@ h1.title-page
     // tabs
     .tabs__head__main
       .tab.tab__one.tab__active
-        | гермозона
+        | Гермозона
       .tab.tab__two
-        | не гермозона
+        | Не гермозона
+      .tab.tab__three
+        | Уставки
 
   // tab content 1
   .tabs__content.tabs__content__one
 
     // column
 
-    .engine-col
+    .engine-col.engine-col-active
 
       h4
         | Привод перемещения полотна 2А1
@@ -46,7 +48,7 @@ h1.title-page
       .engine-col-left
 
         .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh")
+          input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
           label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
       // local col right
@@ -55,11 +57,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | К раме
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -100,11 +130,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchTwo")
+              label(for="switchTwo")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | К шлюзу
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -145,15 +203,48 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway.engine-di-text-indication-alarm
-            | К шлюзу
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
     .engine-col
+
+      // condition
+
+      //.engine-condition
+      //  | Р
 
       h4
         | Привод герметизации полотна 3А1
@@ -208,11 +299,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -271,11 +390,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -334,11 +481,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -397,12 +572,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
-
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
     // column
 
     .engine-col
@@ -460,11 +662,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // column
 
@@ -523,11 +753,39 @@ h1.title-page
 
         // field
 
-        .engine-col-field
+        .engine-control-col-field
+
+          // buttons controls
+
+          // button column
+
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchThree")
+              label(for="switchThree")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal
+              img(src="../img/alarm.png" alt="lol")
 
           // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | разгерметизирован
+          //.engine-di-text-indication.engine-di-text-indication-gateway
+          //| К раме
 
     // buttons
 
@@ -1116,3 +1374,46 @@ h1.title-page
           | Положение шпилек
         input.engine-checkbox(type="checkbox" name="dimonih" id="dimonih")
         label.engine-checkbox-label.right.mr-8(for="dimonih")
+
+  // tab content 3
+  .tabs__content.tabs__content__three
+    
+
+    // field
+
+    .engine-ust-field
+
+      p
+        | Значение СПЗО
+
+      input(type="text")
+      input(type="text")
+
+      button
+        | Сохранить
+
+    // field
+
+    .engine-ust-field
+
+      p
+        | Значение СПЗО
+
+      input(type="text")
+      input(type="text")
+
+      button
+        | Сохранить
+
+    // field
+
+    .engine-ust-field
+
+      p
+        | Значение СПЗО
+
+      input(type="text")
+      input(type="text")
+
+      button
+        | Сохранить
