@@ -1,0 +1,79 @@
+// block status plc
+
+// title page
+
+h1.title-page
+  |	Диагностика ПЛК
+
+.status-plc
+
+  // charge level
+
+  .status-plc__charge-level
+
+    p
+      | Уровень заряда батареи
+    
+    .status-plc__charge-level__container
+      .status-plc__charge-level__body__progress
+    
+  // errors
+
+  .status-plc__errors
+
+    p
+      | Ошибки
+
+    // container
+
+    .status-plc__errors__container
+
+      ul
+        li
+          p
+            | E1
+          span
+            | OK
+        li.status-plc__errors__signal-error
+          p
+            | E2
+          span
+            | ERROR
+        li
+          p
+            | E3
+          span
+            | OK
+        li
+          p
+            | E4
+          span
+            | OK
+    
+    // other status information
+
+    .status-plc__other-status-info
+
+      p
+        | Загрузка ЦПУ
+
+      // current cpu load
+
+      small
+        | Текущая
+
+      .status-plc__other-status-info__current-cpu-load-container
+        .status-plc__other-status-info__current-cpu-load-container__progress
+
+      // mean cpu load
+
+      small
+        | Средняя
+
+      .status-plc__other-status-info__mean-cpu-load-container
+        .status-plc__other-status-info__mean-cpu-load-container__progress
+
+    // reset error
+
+    button.btn.btn-grey.status-plc__reset-errors
+      | Сброс ошибок

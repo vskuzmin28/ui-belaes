@@ -7,10 +7,11 @@
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
-    <title>Белорусская АЭС | Обозначения сигналов</title>
+    <title>Белорусская АЭС | Экран состояний для шкафа локального управления транспортным шлюзом</title>
     <link rel="stylesheet" href="../styles/style.css">
   </head>
   <body>
+    <!-- conteiner-->
     <div class="conteiner">
       <!-- header-->
       <div class="header">
@@ -30,8 +31,53 @@
         <!-- icon menu-->
         <div class="icon__menu"></div>
       </div>
+      <!-- block status plc-->
       <!-- title page-->
-      <h1 class="title-page">	Обозначения состояний сигналов, событий</h1><img class="about__bg" src="../img/about.png" alt=""><a class="btn-grey btn-grey-big w-120 center" href="/" title="">	Вернуться</a>
+      <h1 class="title-page">	Диагностика ПЛК</h1>
+      <div class="status-plc">
+        <!-- charge level-->
+        <div class="status-plc__charge-level">
+          <p>Уровень заряда батареи</p>
+          <div class="status-plc__charge-level__container">
+            <div class="status-plc__charge-level__body__progress"></div>
+          </div>
+        </div>
+        <!-- errors-->
+        <div class="status-plc__errors">
+          <p>Ошибки</p>
+          <!-- container-->
+          <div class="status-plc__errors__container">
+            <ul>
+              <li>
+                <p>E1</p><span>OK</span>
+              </li>
+              <li class="status-plc__errors__signal-error">
+                <p>E2</p><span>ERROR</span>
+              </li>
+              <li>
+                <p>E3</p><span>OK</span>
+              </li>
+              <li>
+                <p>E4</p><span>OK</span>
+              </li>
+            </ul>
+          </div>
+          <!-- other status information-->
+          <div class="status-plc__other-status-info">
+            <p>Загрузка ЦПУ</p>
+            <!-- current cpu load--><small>Текущая</small>
+            <div class="status-plc__other-status-info__current-cpu-load-container">
+              <div class="status-plc__other-status-info__current-cpu-load-container__progress"></div>
+            </div>
+            <!-- mean cpu load--><small>Средняя</small>
+            <div class="status-plc__other-status-info__mean-cpu-load-container">
+              <div class="status-plc__other-status-info__mean-cpu-load-container__progress"></div>
+            </div>
+          </div>
+          <!-- reset error-->
+          <button class="btn btn-grey status-plc__reset-errors">Сброс ошибок</button>
+        </div>
+      </div>
     </div>
   </body>
   <div class="navigation"><a class="navigation__close" href="#" title=""></a>

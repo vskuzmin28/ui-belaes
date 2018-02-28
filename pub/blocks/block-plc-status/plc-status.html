@@ -1,0 +1,48 @@
+
+<!-- block status plc-->
+<!-- title page-->
+<h1 class="title-page">	Диагностика ПЛК</h1>
+<div class="status-plc">
+  <!-- charge level-->
+  <div class="status-plc__charge-level">
+    <p>Уровень заряда батареи</p>
+    <div class="status-plc__charge-level__container">
+      <div class="status-plc__charge-level__body__progress"></div>
+    </div>
+  </div>
+  <!-- errors-->
+  <div class="status-plc__errors">
+    <p>Ошибки</p>
+    <!-- container-->
+    <div class="status-plc__errors__container">
+      <ul>
+        <li>
+          <p>E1</p><span>OK</span>
+        </li>
+        <li class="status-plc__errors__signal-error">
+          <p>E2</p><span>ERROR</span>
+        </li>
+        <li>
+          <p>E3</p><span>OK</span>
+        </li>
+        <li>
+          <p>E4</p><span>OK</span>
+        </li>
+      </ul>
+    </div>
+    <!-- other status information-->
+    <div class="status-plc__other-status-info">
+      <p>Загрузка ЦПУ</p>
+      <!-- current cpu load--><small>Текущая</small>
+      <div class="status-plc__other-status-info__current-cpu-load-container">
+        <div class="status-plc__other-status-info__current-cpu-load-container__progress"></div>
+      </div>
+      <!-- mean cpu load--><small>Средняя</small>
+      <div class="status-plc__other-status-info__mean-cpu-load-container">
+        <div class="status-plc__other-status-info__mean-cpu-load-container__progress"></div>
+      </div>
+    </div>
+    <!-- reset error-->
+    <button class="btn btn-grey status-plc__reset-errors">Сброс ошибок</button>
+  </div>
+</div>
