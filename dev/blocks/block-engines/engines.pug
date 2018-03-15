@@ -803,17 +803,30 @@ h1.title-page
         p
           | Ручной
 
-        input(type="checkbox" id="switch")
-        label(for="switch")
+        input(type="checkbox" id="switch-mode")
+        label(for="switch-mode")
           | 4444
 
         p
           | Автомат
 
+      // switch zones
+
+      .engine-switch
+        p
+          | К шлюзу
+
+        input(type="checkbox" id="switch-zones")
+        label(for="switch-zones")
+          | 4444
+
+        p
+          | В ЗГЗ
+
       // read/write
 
       .read-write-status
-        | неавторизованный - только чтение
+        | только чтение
 
       // place shpilek
 
@@ -1362,10 +1375,23 @@ h1.title-page
         p
           | Автомат
 
+      // switch zones
+
+      .engine-switch
+        p
+          | К шлюзу
+
+        input(type="checkbox" id="switch-zones1")
+        label(for="switch-zones1")
+          | 4444
+
+        p
+          | в ЗГЗ
+
       // read/write
 
       .read-write-status
-        | неавторизованный - только чтение
+        | только чтение
 
       // place shpilek
 
@@ -1377,17 +1403,22 @@ h1.title-page
 
   // tab content 3
   .tabs__content.tabs__content__three
-    
-    // .engine-ust-field container
 
-    .engine-ust-field-container
+    // title screen
+
+    h3
+      | Уставки для приводов
+
+    // SUB CONTENT 1 (ONE) SETTING ENGINE
+
+    .engine-ust-field-container.tab-content-engine-body.tab-content-one-setting-engine
 
       // field
 
       .engine-ust-field
 
         p
-          | Значение привода СПЗО
+          | Положение привода 2А1 у рамы
 
         input(type="text" placeholder="тек.")
         input(type="text" placeholder="нов.")
@@ -1400,7 +1431,7 @@ h1.title-page
       .engine-ust-field
 
         p
-          | Значение привода СПЗО
+          | Положение привода 2А1 у шлюза
 
         input(type="text" placeholder="тек.")
         input(type="text" placeholder="нов.")
@@ -1413,10 +1444,238 @@ h1.title-page
       .engine-ust-field
 
         p
-          | Значение привода СПЗО
+          | Положение привода 2А1 в зоне ГЗ
 
         input(type="text" placeholder="тек.")
         input(type="text" placeholder="нов.")
 
         button
           | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А2 у рамы
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А2 у шлюза
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А2 в зоне ГЗ
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // status engine 2A3
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А3 у рамы
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А3 у шлюза
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А3 в зоне ГЗ
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // status engine 2A4
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А4 у рамы
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А4 у шлюза
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А4 в зоне НГЗ
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // status engine 2A5
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А5 у рамы
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А5 у шлюза
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А5 в зоне НГЗ
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // status engine 2A6
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А6 у рамы
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А6 у шлюза
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+      // field
+
+      .engine-ust-field
+
+        p
+          | Положение привода 2А6 в зоне НГЗ
+
+        input(type="text" placeholder="тек.")
+        input(type="text" placeholder="нов.")
+
+        button
+          | Сохранить
+
+    // SUB CONTENT 2 (TWO) SETTING ENGINE
+
+    .engine-ust-field-container.tab-content-engine-body.tab-content-two-setting-engine
+      | CONTENT FROM TAB #2
+
+    // SUB CONTENT 3 (THREE) SETTING ENGINE
+
+    .engine-ust-field-container.tab-content-engine-body.tab-content-three-setting-engine
+      | CONTENT FROM TAB #3
+
+    // links body for subtabs
+
+    .tab-links-body-setting-engine
+      // link one
+      .tab-link-body-setting-engine.tab-link-one-setting-engine.tab-link-active-setting-engine
+        | Страница 1
+
+      // link two
+      .tab-link-body-setting-engine.tab-link-two-setting-engine
+        | Страница 2
+
+      // link three
+      .tab-link-body-setting-engine.tab-link-three-setting-engine        
+        | Страница 3

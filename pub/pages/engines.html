@@ -526,12 +526,19 @@
             <!-- switch-->
             <div class="engine-switch">
               <p>Ручной</p>
-              <input type="checkbox" id="switch">
-              <label for="switch">4444</label>
+              <input type="checkbox" id="switch-mode">
+              <label for="switch-mode">4444</label>
               <p>Автомат</p>
             </div>
+            <!-- switch zones-->
+            <div class="engine-switch">
+              <p>К шлюзу</p>
+              <input type="checkbox" id="switch-zones">
+              <label for="switch-zones">4444</label>
+              <p>В ЗГЗ</p>
+            </div>
             <!-- read/write-->
-            <div class="read-write-status">неавторизованный - только чтение</div>
+            <div class="read-write-status">только чтение</div>
             <!-- place shpilek-->
             <div class="engine-place-sh">
               <p>Положение шпилек</p>
@@ -889,8 +896,15 @@
               <label for="switch">4444</label>
               <p>Автомат</p>
             </div>
+            <!-- switch zones-->
+            <div class="engine-switch">
+              <p>К шлюзу</p>
+              <input type="checkbox" id="switch-zones1">
+              <label for="switch-zones1">4444</label>
+              <p>в ЗГЗ</p>
+            </div>
             <!-- read/write-->
-            <div class="read-write-status">неавторизованный - только чтение</div>
+            <div class="read-write-status">только чтение</div>
             <!-- place shpilek-->
             <div class="engine-place-sh">
               <p>Положение шпилек</p>
@@ -901,29 +915,154 @@
         </div>
         <!-- tab content 3-->
         <div class="tabs__content tabs__content__three">
-          <!-- .engine-ust-field container-->
-          <div class="engine-ust-field-container">
+          <!-- title screen-->
+          <h3>Уставки для приводов</h3>
+          <!-- SUB CONTENT 1 (ONE) SETTING ENGINE-->
+          <div class="engine-ust-field-container tab-content-engine-body tab-content-one-setting-engine">
             <!-- field-->
             <div class="engine-ust-field">
-              <p>Значение привода СПЗО</p>
+              <p>Положение привода 2А1 у рамы</p>
               <input type="text" placeholder="тек.">
               <input type="text" placeholder="нов.">
               <button>Сохранить</button>
             </div>
             <!-- field-->
             <div class="engine-ust-field">
-              <p>Значение привода СПЗО</p>
+              <p>Положение привода 2А1 у шлюза</p>
               <input type="text" placeholder="тек.">
               <input type="text" placeholder="нов.">
               <button>Сохранить</button>
             </div>
             <!-- field-->
             <div class="engine-ust-field">
-              <p>Значение привода СПЗО</p>
+              <p>Положение привода 2А1 в зоне ГЗ</p>
               <input type="text" placeholder="тек.">
               <input type="text" placeholder="нов.">
               <button>Сохранить</button>
             </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А2 у рамы</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А2 у шлюза</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А2 в зоне ГЗ</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- status engine 2A3-->
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А3 у рамы</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А3 у шлюза</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А3 в зоне ГЗ</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- status engine 2A4-->
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А4 у рамы</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А4 у шлюза</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А4 в зоне НГЗ</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- status engine 2A5-->
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А5 у рамы</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А5 у шлюза</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А5 в зоне НГЗ</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- status engine 2A6-->
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А6 у рамы</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А6 у шлюза</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+            <!-- field-->
+            <div class="engine-ust-field">
+              <p>Положение привода 2А6 в зоне НГЗ</p>
+              <input type="text" placeholder="тек.">
+              <input type="text" placeholder="нов.">
+              <button>Сохранить</button>
+            </div>
+          </div>
+          <!-- SUB CONTENT 2 (TWO) SETTING ENGINE-->
+          <div class="engine-ust-field-container tab-content-engine-body tab-content-two-setting-engine">CONTENT FROM TAB #2</div>
+          <!-- SUB CONTENT 3 (THREE) SETTING ENGINE-->
+          <div class="engine-ust-field-container tab-content-engine-body tab-content-three-setting-engine">CONTENT FROM TAB #3</div>
+          <!-- links body for subtabs-->
+          <div class="tab-links-body-setting-engine">
+            <!-- link one-->
+            <div class="tab-link-body-setting-engine tab-link-one-setting-engine tab-link-active-setting-engine">Страница 1</div>
+            <!-- link two-->
+            <div class="tab-link-body-setting-engine tab-link-two-setting-engine">Страница 2</div>
+            <!-- link three-->
+            <div class="tab-link-body-setting-engine tab-link-three-setting-engine">
+                     Страница 3</div>
           </div>
         </div>
       </div>

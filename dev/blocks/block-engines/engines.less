@@ -174,7 +174,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 .engine-switch {
 	margin-top: 20px;
 	margin-left: 30px;
-	width: 240px;
+	width: 200px;
 	height: 30px;
 	overflow: hidden;
 	float: left;
@@ -407,19 +407,27 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 
 .engine-ust-field-container {
 	margin: 30px auto;
-	width: 500px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
 }
 
 // field
 
 .engine-ust-field {
-	margin: 10px 10px 10px 4px;
-	width: 500px;
+	margin: 10px 20px 10px 4px;
+	width: 480px;
+	float: left;
 	height: 25px;
+	overflow: hidden;
+
+	&:nth-child(even) {
+		margin-right: 0;
+	}
 
 	p {
 		margin-right: 10px;
-		width: 170px;
+		width: 230px;
 		float: left;
 		font: 14px @pt-regular;
 		color: @white;
@@ -431,7 +439,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 
 		margin-right: 6px;
 		float: left;
-		width: 50px;
+		width: 40px;
 		height: 25px;
 
 		font: 14px @pt-regular;
@@ -457,4 +465,55 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		color: @white;
 	}
 
+}
+
+// title small
+
+.tabs__content {
+
+	h3 {
+		margin: 20px 0;
+		float: left;
+
+		font: 20px @pt-bold;
+		color: @white;	
+	}
+
+}
+
+// subtabs setting engine
+
+.tab-content-engine-body {
+	height: auto;
+}
+
+.tab-links-body-setting-engine {
+	position: absolute;
+	bottom: 20px;
+	right: 12px;
+	width: 324px;
+	height: 42px;
+
+	//background: @red;
+}
+
+.tab-link-body-setting-engine {
+	margin: 0 6px;
+	padding: 0 10px;
+	display: inline-block;
+	height: 38px;
+
+	font: 14px @pt-regular;
+	color: @white;
+	line-height: 36px;
+
+	border-radius: 4px;
+
+	background: @blue-dark;
+	border: 2px solid @blue;
+}
+
+.tab-link-active-setting-engine {
+	background: @blue;
+	//font-weight: bold;
 }
