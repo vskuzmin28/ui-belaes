@@ -347,9 +347,18 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	margin-left: 5px;
 	width: 25px;
 	height: 25px;
+	text-align: center !important;
+	line-height: 24px;
 
 	border-radius: 4px;
 	background: @blue;
+
+	p {
+		font: 14px @pt-bold !important;
+		color: @white !important;
+		text-align: center !important;
+		line-height: 25px !important;
+	}
 
 	img {
 		margin: 4px 0 0 5px;
@@ -357,6 +366,23 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		width: 16px;
 		height: 16px;
 		//-webkit-filter: brightness(10);
+	}
+
+}
+
+.engine-signal-top {
+	position: absolute;
+	right: 10px;
+	top: 7px;
+
+	width: 25px;
+	height: 25px;
+
+	p {
+		font: 14px @pt-bold !important;
+		color: @white !important;
+		text-align: center !important;
+		line-height: 25px !important;
 	}
 
 }
