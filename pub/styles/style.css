@@ -363,11 +363,12 @@ button {
     background: url('../img/close.png') no-repeat;
   }
   .system-clock {
+    margin-top: -2px;
     float: left;
     width: 150px;
-    font: 14px 'pt_sansregular';
+    font: 16px 'pt_sansregular';
     color: #fff;
-    line-height: 18px;
+    line-height: 20px;
   }
   .display-none {
     display: none;
@@ -416,6 +417,73 @@ button {
 .block__analogs table tr td p {
   margin-left: 14px;
   font-size: 14px;
+}
+.auth {
+  border-radius: 30%;
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 320px;
+  background: url('../img/logo.png') no-repeat bottom center;
+  text-align: center;
+  color: #fff;
+}
+.auth h2 {
+  margin-bottom: 30px;
+  font: 20px 'pt_sansbold';
+  text-transform: uppercase;
+}
+.auth input[type="password"] {
+  margin-top: 50px;
+  padding: 0 10px;
+  width: 160px;
+  height: 30px;
+  background: #1f253d;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  content: "******";
+  font: 14px 'pt_sansregular';
+  color: #fff;
+  margin-bottom: 20px;
+}
+.auth input[type="password"]::-webkit-input-placeholder {
+  font: 14px 'pt_sansitalic';
+  color: #fff;
+}
+.auth input[type="password"]:invalid {
+  border-color: #e64c65;
+}
+.auth input[type="password"]:valid:required {
+  border-color: #11a8ab !important;
+}
+.auth input[type="password"]:valid:required + button[type="submit"] {
+  background: #11a8ab;
+  border-color: #11a8ab;
+}
+.auth button[type="submit"] {
+  background: #50597b;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  color: #fff;
+}
+.auth button[type="submit"]:hover {
+  background: #1f253d;
+}
+.auth__denied {
+  display: none;
+  margin-top: 110px;
+  font: 24px 'pt_sansregular';
+  color: #fff;
+  text-align: center;
+}
+.auth__close {
+  top: -200px;
+  right: -340px;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('../img/close.png') no-repeat;
 }
 .block__big-journal {
   position: absolute;
@@ -500,73 +568,6 @@ button {
   height: 40px !important;
   line-height: 40px !important;
 }
-.auth {
-  border-radius: 30%;
-  display: none;
-  position: absolute;
-  width: 300px;
-  height: 320px;
-  background: url('../img/logo.png') no-repeat bottom center;
-  text-align: center;
-  color: #fff;
-}
-.auth h2 {
-  margin-bottom: 30px;
-  font: 20px 'pt_sansbold';
-  text-transform: uppercase;
-}
-.auth input[type="password"] {
-  margin-top: 50px;
-  padding: 0 10px;
-  width: 160px;
-  height: 30px;
-  background: #1f253d;
-  border: 1px solid #50597b;
-  border-radius: 4px;
-  content: "******";
-  font: 14px 'pt_sansregular';
-  color: #fff;
-  margin-bottom: 20px;
-}
-.auth input[type="password"]::-webkit-input-placeholder {
-  font: 14px 'pt_sansitalic';
-  color: #fff;
-}
-.auth input[type="password"]:invalid {
-  border-color: #e64c65;
-}
-.auth input[type="password"]:valid:required {
-  border-color: #11a8ab !important;
-}
-.auth input[type="password"]:valid:required + button[type="submit"] {
-  background: #11a8ab;
-  border-color: #11a8ab;
-}
-.auth button[type="submit"] {
-  background: #50597b;
-  border: 1px solid #50597b;
-  border-radius: 4px;
-  color: #fff;
-}
-.auth button[type="submit"]:hover {
-  background: #1f253d;
-}
-.auth__denied {
-  display: none;
-  margin-top: 110px;
-  font: 24px 'pt_sansregular';
-  color: #fff;
-  text-align: center;
-}
-.auth__close {
-  top: -200px;
-  right: -340px;
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: url('../img/close.png') no-repeat;
-}
 .block__cabintes table tr:nth-child(1) td {
   width: 90px;
   text-align: center !important;
@@ -579,6 +580,18 @@ button {
   text-align: left !important;
   vertical-align: middle;
   height: 20px;
+}
+.current-operation {
+  margin-top: 70px;
+  position: absolute;
+  height: 16px;
+}
+.current-operation p {
+  font: 14px 'pt_sansregular';
+  color: #fff;
+}
+.current-operation p span {
+  font-family: 'pt_sansbold';
 }
 .tabs {
   height: auto;
@@ -1588,8 +1601,10 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   line-height: 15px;
 }
 .block__mini-journal__body__btn {
-  width: 120px !important;
-  margin: 3px 0 0 10px;
+  padding: 4px 8px;
+  width: auto !important;
+  margin: -4px 0 0 10px !important;
+  font-size: 14px !important;
 }
 .margin-left-140 {
   margin-left: 140px;
@@ -1931,16 +1946,4 @@ ul.title-zones li:nth-child(3) {
 ul.title-zones li:nth-child(4) {
   width: 136px;
   margin-right: 0px;
-}
-.current-operation {
-  margin-top: 70px;
-  position: absolute;
-  height: 16px;
-}
-.current-operation p {
-  font: 14px 'pt_sansregular';
-  color: #fff;
-}
-.current-operation p span {
-  font-family: 'pt_sansbold';
 }
