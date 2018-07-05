@@ -283,14 +283,40 @@ button {
 	// TRUE / FALSE
 
 
-	// real true / false
+	// real true / false / alarm
 
 	.bg-true {
 		background: @green !important;
 	}
 
+	// alarm
+
 	.bg-false {
 		background: @red !important;
+	}
+
+	button.bg-true {
+
+		&:hover {
+			background: #0e898b !important;
+		}
+
+		&:focus {
+			background: #0c7173 !important;
+		}
+
+	}
+
+	button.bg-false {
+
+		&:hover {
+			background: #d0455c !important;
+		}
+
+		&:focus {
+			background: #b73d51 !important;
+		}
+
 	}
 
 	// / real true / false
