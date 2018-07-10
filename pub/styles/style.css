@@ -102,7 +102,7 @@ button {
     float: left !important;
   }
   .center {
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   .text-left {
     text-align: left;
@@ -307,6 +307,9 @@ button {
   .mr-20 {
     margin-right: 20px;
   }
+  .ml-2 {
+    margin-left: 2px !important;
+  }
   .w-120 {
     width: 104px;
   }
@@ -318,6 +321,9 @@ button {
   }
   .w-190 {
     width: 190px;
+  }
+  .h-40 {
+    height: 40px !important;
   }
   .mt-20 {
     margin-top: 20px !important;
@@ -344,6 +350,9 @@ button {
   .mb-20 {
     margin-bottom: 20px;
   }
+  .mb-40 {
+    margin-bottom: 60px;
+  }
   .w-180 {
     width: 140px;
   }
@@ -358,6 +367,12 @@ button {
   }
   .mb-14 {
     margin-bottom: 34px;
+  }
+  .no-margin {
+    margin: 0 !important;
+  }
+  .border-white {
+    border-color: #fff !important;
   }
   img.about__bg {
     display: block;
@@ -408,6 +423,27 @@ button {
     padding: 16px;
     overflow: hidden;
   }
+}
+.block__analogs table {
+  margin-top: -10px;
+}
+.block__analogs table tr:nth-child(1) td {
+  width: 90px;
+  text-align: center !important;
+  line-height: 0px !important;
+  height: 10px;
+  padding-bottom: 10px;
+}
+.block__analogs table tr td {
+  padding-top: 10px;
+  width: 90px;
+  text-align: center !important;
+  vertical-align: middle;
+  height: 20px;
+}
+.block__analogs table tr td p {
+  margin-left: 14px;
+  font-size: 14px;
 }
 .auth {
   border-radius: 30%;
@@ -559,27 +595,6 @@ button {
   height: 40px !important;
   line-height: 40px !important;
 }
-.block__analogs table {
-  margin-top: -10px;
-}
-.block__analogs table tr:nth-child(1) td {
-  width: 90px;
-  text-align: center !important;
-  line-height: 0px !important;
-  height: 10px;
-  padding-bottom: 10px;
-}
-.block__analogs table tr td {
-  padding-top: 10px;
-  width: 90px;
-  text-align: center !important;
-  vertical-align: middle;
-  height: 20px;
-}
-.block__analogs table tr td p {
-  margin-left: 14px;
-  font-size: 14px;
-}
 .block__cabintes table tr:nth-child(1) td {
   width: 90px;
   text-align: center !important;
@@ -725,6 +740,7 @@ input:checked.checkbox + label.checkbox-label:before {
   float: left;
   width: 300px;
   color: #fff;
+  height: 126px;
   overflow: hidden;
   border: 1px solid #4e5778;
   border-radius: 4px;
@@ -735,20 +751,25 @@ input:checked.checkbox + label.checkbox-label:before {
   margin-right: 0;
 }
 .engine-col-field {
-  margin-top: 10px;
+  margin-top: 26px;
   height: auto;
-  overflow: hidden;
 }
 .engine-col-field p {
   float: left;
   font: 16px 'pt_sansregular';
   line-height: 30px;
 }
+.engine-col-pos-bottom {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  bottom: 10px;
+}
 .progress-bar-body {
   position: relative;
   margin-top: 6px;
   float: right;
-  height: 20px;
+  height: 24px;
   width: 140px;
   background: #394264;
   border-radius: 4px;
@@ -757,7 +778,7 @@ input:checked.checkbox + label.checkbox-label:before {
   transition: all 0.5s ease-in-out;
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 24px;
   background: #50597b;
   border-radius: 4px 0 0 4px;
 }
@@ -765,18 +786,18 @@ input:checked.checkbox + label.checkbox-label:before {
   z-index: 60;
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 24px;
   font: 14px 'pt_sansregular';
   text-align: center;
-  line-height: 18px;
+  line-height: 24px;
 }
 .engine-col-left {
   float: left;
-  width: 100px;
+  width: 30px;
 }
 .engine-di-text-indication-right-col {
   float: right;
-  width: 180px;
+  width: 250px;
 }
 .engine-di-text-indication {
   margin-bottom: 12px;
@@ -801,7 +822,7 @@ input:checked.checkbox + label.checkbox-label:before {
   margin-top: 10px;
 }
 .engine-checkbox-margin {
-  margin: 18px 0 0 0px;
+  margin: 0px 0 0 0px;
 }
 input.engine-checkbox {
   display: none;
@@ -826,8 +847,10 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   content: "";
 }
 .engines-buttons {
-  margin-top: 8px;
-  height: auto;
+  width: 998px;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
 }
 .bg-true {
   background: #11a8ab !important;
@@ -908,7 +931,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   width: 130px;
 }
 .engine-place-sh {
-  margin-top: 32px;
+  margin-top: 26px;
   float: right;
   width: 180px;
   height: 30px;
@@ -932,14 +955,8 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   color: #000;
   border-radius: 4px;
 }
-.engine-control-col-field {
-  margin-left: -70px;
-  margin-top: 18px;
-  overflow: hidden;
-  width: 280px;
-}
 .engine-control-direction {
-  margin-top: 2px;
+  margin-top: 4px;
   float: left;
   width: 190px;
 }
@@ -994,7 +1011,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   width: 130px;
 }
 .engine-signal {
-  margin-top: 2px;
+  margin-top: 4px;
   float: left;
   margin-left: 5px;
   width: 25px;
@@ -1090,11 +1107,12 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   width: 40px;
   height: 25px;
   font: 14px 'pt_sansregular';
-  color: #000;
+  color: #fff !important;
   text-align: center;
   line-height: 23px !important;
   border-radius: 4px;
   border: 0;
+  background: #50597b;
 }
 .engine-ust-field button {
   float: left;
@@ -1103,9 +1121,14 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   height: 25px;
   border-radius: 4px;
   background: #11a8ab;
+  text-align: center;
   font: 14px 'pt_sansbold';
   text-transform: uppercase;
   color: #fff;
+}
+.tabs__content {
+  height: auto;
+  padding-top: 10px;
 }
 .tabs__content h3 {
   margin: 20px 0;
@@ -1137,6 +1160,126 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 }
 .tab-link-active-setting-engine {
   background: #394264;
+}
+.engine-control-col-field {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  height: 30px;
+}
+.setting-body {
+  width: 100%;
+  height: auto;
+}
+.settings-body__engine-item {
+  height: auto;
+}
+h3.settings-body__engine-item__title {
+  display: block !important;
+  width: 100% !important;
+  height: 30px !important;
+  font: 18px 'pt_sansbold' !important;
+  color: #fff !important;
+}
+.settings-body__container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.settings-body__container ul {
+  margin-right: 0px;
+  display: inline-block;
+}
+.settings-body__container ul:last-child {
+  margin-right: 0;
+}
+.settings-body__container ul li {
+  margin-right: 10px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #394264;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 4px;
+  border: 1px solid #50597b;
+}
+.settings-body__container__column {
+  display: inline-block;
+  width: 29.5%;
+  height: auto;
+}
+.settings-body__container__column:last-child {
+  width: 10%;
+}
+.settings-body__container__column h4 {
+  font: 18px 'pt_sansregular';
+  text-align: center;
+  margin-bottom: 20px;
+}
+.settings-vals-container {
+  width: 100%;
+  height: auto;
+}
+.settings-vals-container__control {
+  float: left;
+  width: 100px;
+  height: 200px;
+}
+.settings-vals-container__control_plus,
+.settings-vals-container__control_minus {
+  width: 80px;
+  height: 80px;
+  background: #394264;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  font: 32px 'pt_sansbold';
+  text-align: center;
+  color: #fff;
+  line-height: 80px;
+  margin-bottom: 14px;
+}
+.settings-vals-container__control_title {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 14px;
+  font: 18px 'pt_sansregular';
+  text-align: center;
+  line-height: 80px;
+}
+.settings-vals-container__input {
+  margin-bottom: 14px;
+  background: #394264;
+  border: 1px solid #50597b;
+  border-radius: 4px;
+  float: left;
+  width: 160px;
+  height: 80px;
+  font: 24px 'pt_sansregular';
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+.settings-vals-container__input:last-child {
+  margin-right: 0;
+}
+.settings-vals-container_button {
+  margin: 0 auto !important;
+  margin-top: 10px !important;
+  display: block !important;
+  width: 140px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 14px !important;
+  border: 1px solid #50597b;
+}
+.settings-vals-container_switch_current {
+  background: #50597b !important;
+}
+.settings-vals-container_switch {
+  margin: 0 auto;
+  margin-top: 36px;
+  width: 440px;
 }
 .gateway {
   display: block;
@@ -1303,34 +1446,6 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   border-right: 4px solid #1f253d;
   z-index: 100;
 }
-.block__indication-plc {
-  padding-top: 23px;
-  text-align: center;
-  height: 180px;
-}
-.block__indication-plc p {
-  margin-top: 4px;
-  margin-bottom: 9px;
-  font: 12px 'pt_sansbold';
-  text-transform: uppercase;
-  color: #fff;
-}
-.block__indication-plc__icon {
-  width: 34px;
-  height: 34px;
-}
-.block__indication-plc__icon__true {
-  background: url('../img/true-plc.png') no-repeat !important;
-}
-.block__indication-plc__icon__false {
-  background: url('../img/false-plc.png') no-repeat !important;
-}
-.block__indication__icon_general-average-false {
-  background: url('../img/general-average-normal.png') no-repeat;
-}
-.block__indication__icon_general-average-true {
-  background: url('../img/general-average-fire.png') no-repeat;
-}
 .header {
   margin: 0 0 0 0px;
   height: 38px;
@@ -1375,6 +1490,34 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
   width: 92px;
   height: 26px;
   background: url('../img/icon-menu.png') no-repeat right;
+}
+.block__indication-plc {
+  padding-top: 23px;
+  text-align: center;
+  height: 180px;
+}
+.block__indication-plc p {
+  margin-top: 4px;
+  margin-bottom: 9px;
+  font: 12px 'pt_sansbold';
+  text-transform: uppercase;
+  color: #fff;
+}
+.block__indication-plc__icon {
+  width: 34px;
+  height: 34px;
+}
+.block__indication-plc__icon__true {
+  background: url('../img/true-plc.png') no-repeat !important;
+}
+.block__indication-plc__icon__false {
+  background: url('../img/false-plc.png') no-repeat !important;
+}
+.block__indication__icon_general-average-false {
+  background: url('../img/general-average-normal.png') no-repeat;
+}
+.block__indication__icon_general-average-true {
+  background: url('../img/general-average-fire.png') no-repeat;
 }
 .keypad {
   left: 50%;
@@ -1913,7 +2056,7 @@ h2.title-rollers-item {
 }
 h4.rollers-description {
   font-size: 16px !important;
-  text-align: right !important;
+  text-align: left !important;
 }
 .rollers-buttons {
   height: auto;
@@ -1924,6 +2067,12 @@ h4.rollers-description {
   padding: 0 14px;
   display: inline-block !important;
   border: 0;
+}
+.rollers-fix-height-col {
+  height: auto;
+}
+.rollers-fix-checkbox {
+  margin-top: 20px !important;
 }
 hr.rollers-space {
   height: 1px;

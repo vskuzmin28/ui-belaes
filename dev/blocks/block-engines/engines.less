@@ -4,6 +4,8 @@
 	height: auto;
 }
 
+// column
+
 .engine-col {
 	position: relative;
 	margin: 10px 0 0 0;
@@ -13,6 +15,8 @@
 	float: left;
 	width:  300px;
 	color: @white;
+
+	height: 126px;
 
 	overflow: hidden;
 
@@ -28,9 +32,9 @@
 }
 
 .engine-col-field {
-	margin-top: 10px;
+	margin-top: 26px;
 	height: auto;
-	overflow: hidden;
+	//overflow: hidden;
 
 	p {
 		float: left;
@@ -40,11 +44,18 @@
 
 }
 
+.engine-col-pos-bottom {
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	bottom: 10px;
+}
+
 .progress-bar-body {
 	position: relative;
 	margin-top: 6px;
 	float: right;
-	height: 20px;
+	height: 24px;
 	width: 140px;
 	background: @blue;
 
@@ -55,7 +66,7 @@
 	transition: all 0.5s ease-in-out;
 	position: absolute;
 	width: 20px;
-	height: 20px;
+	height: 24px;
 	background: @blue-light;
 
 	border-radius: 4px 0 0 4px;
@@ -65,21 +76,21 @@
 	z-index: 60;
 	position: absolute;
 	width: 100%;
-	height: 20px;
+	height: 24px;
 
 	font: 14px @pt-regular;
 	text-align: center;
-	line-height: 18px;
+	line-height: 24px;
 }
 
 .engine-col-left {
 	float: left;
-	width: 100px;
+	width: 30px;
 }
 
 .engine-di-text-indication-right-col {
 	float: right;
-	width: 180px;
+	width: 250px;
 }
 
 .engine-di-text-indication {
@@ -111,7 +122,7 @@
 }
 
 .engine-checkbox-margin {
-	margin: 18px 0 0 0px;
+	margin: 0px 0 0 0px;
 }
 
 input.engine-checkbox {
@@ -140,8 +151,11 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 }
 
 .engines-buttons {
-	margin-top: 8px;
-	height: auto;
+	width: 998px;
+	height: 40px;
+
+	position: absolute;
+	bottom: 50px;
 }
 
 .bg-true {
@@ -166,8 +180,6 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	width: 100px;
 	border: 0;
 	height: 40px;
-
-	//font-size: 14px;
 	line-height: 2px !important;
 }
 
@@ -239,7 +251,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 }
 
 .engine-place-sh {
-	margin-top: 32px;
+	margin-top: 26px;
 	float: right;
 	width: 180px;
 	height: 30px;
@@ -269,15 +281,8 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	border-radius: 4px;
 }
 
-.engine-control-col-field {
-	margin-left: -70px;
-	margin-top: 18px;
-	overflow: hidden;
-	width: 280px;
-}
-
 .engine-control-direction {
-	margin-top: 2px;
+	margin-top: 4px;
 	float: left;
 	width: 190px;
 
@@ -342,7 +347,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 }
 
 .engine-signal {
-	margin-top: 2px;
+	margin-top: 4px;
 	float: left;
 	margin-left: 5px;
 	width: 25px;
@@ -469,12 +474,13 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		height: 25px;
 
 		font: 14px @pt-regular;
-		color: @black;
+		color: @white !important;
 		text-align: center;
 		line-height: 23px !important;
 
 		border-radius: 4px;
 		border: 0;
+		background: @blue-light;
 	}
 
 	button {
@@ -486,6 +492,7 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 		border-radius: 4px;
 		background: @green;
 
+		text-align: center;
 		font: 14px @pt-bold;
 		text-transform: uppercase;
 		color: @white;
@@ -496,6 +503,10 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 // title small
 
 .tabs__content {
+	height: auto;
+	//overflow: hidden;
+	padding-top: 10px;
+	//margin-bottom: 30px;
 
 	h3 {
 		margin: 20px 0;
@@ -519,8 +530,6 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 	right: 12px;
 	width: 324px;
 	height: 42px;
-
-	//background: @red;
 }
 
 .tab-link-body-setting-engine {
@@ -542,4 +551,168 @@ input:checked.engine-checkbox + label.engine-checkbox-label:before {
 .tab-link-active-setting-engine {
 	background: @blue;
 	//font-weight: bold;
+}
+
+// control column
+
+.engine-control-col-field {
+	position: absolute;
+	bottom: 4px;
+	width: 100%;
+	height: 30px;
+}
+
+.setting-body {
+	width: 100%;
+	height: auto;
+}
+
+.settings-body__engine-item {
+	height: auto;
+}
+
+h3.settings-body__engine-item__title {
+	display: block !important;
+	width: 100% !important;
+	height: 30px !important;
+	font: 18px @pt-bold !important;
+	color: @white !important;
+}
+
+.settings-body__container {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+	ul {
+		margin-right: 0px;
+		display: inline-block;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+
+		li {
+			margin-right: 10px;
+			float: left;
+
+			width: 60px;
+			height: 60px;
+
+			background: @blue;
+
+			text-align: center;
+			line-height: 60px;
+
+			border-radius: 4px;
+			border: 1px solid @blue-light;
+
+		}
+
+	}
+
+}
+
+.settings-body__container__column {
+	display: inline-block;
+	width: 29.5%;
+	height: auto;
+	//background: #f00;
+
+	&:last-child {
+		width: 10%;
+	}
+
+	h4 {
+		font: 18px @pt-regular;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+}
+
+.settings-vals-container {
+	width: 100%;
+	height: auto;
+}
+
+.settings-vals-container__control {
+	float: left;
+	width: 100px;
+	height: 200px;
+}
+
+.settings-vals-container__control_plus,
+.settings-vals-container__control_minus {
+	width: 80px;
+	height: 80px;
+
+	background: @blue;
+	border: 1px solid @blue-light;
+	border-radius: 4px;
+
+	font: 32px @pt-bold;
+	text-align: center;
+	color: @white;
+
+	line-height: 80px;
+
+	margin-bottom: 14px;
+}
+
+.settings-vals-container__control_title {
+	width: 100%;
+	height: 80px;
+
+	margin-bottom: 14px;
+
+	font: 18px @pt-regular;
+	text-align: center;
+
+	line-height: 80px;
+}
+
+.settings-vals-container__input {
+
+	margin-bottom: 14px;
+
+	background: @blue;
+	border: 1px solid @blue-light;
+	border-radius: 4px;
+
+	float: left;
+	width: 160px;
+	height: 80px;
+
+	font: 24px @pt-regular;
+	color: @white;
+
+	text-align: center;
+	line-height: 80px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+}
+
+.settings-vals-container_button {
+	margin: 0 auto !important;
+	margin-top: 10px !important;
+	display: block !important;
+	width: 140px !important;
+	height: 40px !important;
+	line-height: 40px !important;
+	font-size: 14px !important;
+	border: 1px solid @blue-light;
+}
+
+.settings-vals-container_switch_current {
+	background: @blue-light !important;
+}
+
+.settings-vals-container_switch {
+	margin: 0 auto;
+	margin-top: 36px;
+	width: 440px;
 }
