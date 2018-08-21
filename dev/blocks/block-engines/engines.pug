@@ -725,11 +725,15 @@ h1.title-page
     .engine-col
 
       h4
-        | Привод перемещения полотна 2А4
+        | Привод перемещения полотна 2A4
 
       // field
 
       .engine-col-field
+
+        // direction
+        .engine-signal.engine-signal-top.engine-signal-terminal-true
+          | Р
 
         p
           | Положение
@@ -745,25 +749,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh")
-          label.engine-checkbox-label.left.mr-8(for="dimonUh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | К шлюзу
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -776,6 +800,10 @@ h1.title-page
 
       .engine-col-field
 
+        // direction
+        .engine-signal.engine-signal-top
+          | Р
+
         p
           | Положение
 
@@ -790,25 +818,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonAh" id="dimonAh")
-          label.engine-checkbox-label.left.mr-8(for="dimonAh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | К шлюзу
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -821,6 +869,10 @@ h1.title-page
 
       .engine-col-field
 
+        // direction
+        .engine-signal.engine-signal-top
+          | Р
+
         p
           | Положение
 
@@ -835,29 +887,54 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonEh" id="dimonEh")
-          label.engine-checkbox-label.left.mr-8(for="dimonEh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway.engine-di-text-indication-alarm
-            | К шлюзу
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
     .engine-col
+
+      // condition
+
+      //.engine-condition
+      //  | Р
 
       h4
         | Привод герметизации полотна 3А7
@@ -866,19 +943,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -898,25 +965,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonOh" id="dimonOh")
-          label.engine-checkbox-label.left.mr-8(for="dimonOh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -929,19 +1016,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -961,25 +1038,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonqh" id="dimonqh")
-          label.engine-checkbox-label.left.mr-8(for="dimonqh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -992,19 +1089,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -1024,25 +1111,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonrh" id="dimonrh")
-          label.engine-checkbox-label.left.mr-8(for="dimonrh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -1055,19 +1162,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -1087,25 +1184,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonth" id="dimonth")
-          label.engine-checkbox-label.left.mr-8(for="dimonth")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -1118,19 +1235,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -1150,25 +1257,45 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimongh" id="dimongh")
-          label.engine-checkbox-label.left.mr-8(for="dimongh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // column
 
@@ -1181,19 +1308,9 @@ h1.title-page
 
       .engine-col-field
 
-        p
-          | Положение
-
-        // progress
-
-        .progress-bar-body
-
-          // description
-          .progress-bar-body-description
-            | 0.6 %
-
-          // poehali
-          .progress-bar__poehali
+        // germetizaciya
+        .engine-signal.engine-signal-top
+          | Г
 
       // field
 
@@ -1213,31 +1330,51 @@ h1.title-page
           // poehali
           .progress-bar__poehali
 
-      // local  col left
+      // field
 
-      .engine-col-left
+      .engine-col-field.engine-col-pos-bottom
 
-        .engine-checkbox-margin
-          input.engine-checkbox(type="checkbox" name="dimonbh" id="dimonbh")
-          label.engine-checkbox-label.left.mr-8(for="dimonbh")
+        // col left
 
-      // local col right
+        .engine-col-left
 
-      .engine-di-text-indication-right-col      
+          .engine-checkbox-margin
+            input.engine-checkbox(type="checkbox" name="dimonUh" id="dimonUh" checked)
+            label.engine-checkbox-label.left.mr-8(for="dimonUh")
 
-        // field
+        // col right
 
-        .engine-col-field
+        .engine-di-text-indication-right-col      
 
-          // di indictation
-          .engine-di-text-indication.engine-di-text-indication-gateway
-            | загерметизирован
+          .engine-control-column
+
+            // engine direction
+
+            .engine-control-direction            
+
+              p
+                | К раме
+
+              input(type="checkbox" id="switchOne")
+              label(for="switchOne")
+                | 4444
+
+              p
+                | К шлюзу
+
+            // signal alarm
+
+            .engine-signal
+              img(src="../img/terminal.png" alt="lol")
+
+            .engine-signal.engine-signal-alarm-true
+              img(src="../img/alarm.png" alt="@@")
 
     // buttons
 
     .engines-buttons
 
-      button.btn-grey.btn-grey-big.left.engines-buttons-small.bg-true
+      button.btn-grey.btn-grey-big.left.engines-buttons-small.bg-true.ml-2
         | Пуск
 
       button.btn-grey.btn-grey-big.left.engines-buttons-small.bg-false
@@ -1249,8 +1386,8 @@ h1.title-page
         p
           | Ручной
 
-        input(type="checkbox" id="switch")
-        label(for="switch")
+        input(type="checkbox" id="switch-mode")
+        label(for="switch-mode")
           | 4444
 
         p
@@ -1262,12 +1399,12 @@ h1.title-page
         p
           | К шлюзу
 
-        input(type="checkbox" id="switch-zones1")
-        label(for="switch-zones1")
+        input(type="checkbox" id="switch-zones")
+        label(for="switch-zones")
           | 4444
 
         p
-          | в ЗГЗ
+          | В ЗГЗ
 
       // read/write
 
@@ -1280,7 +1417,7 @@ h1.title-page
         p
           | Положение у шпилек
         input.engine-checkbox(type="checkbox" name="dimonih" id="dimonih")
-        label.engine-checkbox-label.right.mr-8(for="dimonih")
+        label.engine-checkbox-label.right.mr-8(for="dimonih")  
 
   // tab content 3
   .tabs__content.tabs__content__three
@@ -1303,7 +1440,7 @@ h1.title-page
         .settings-body__engine-item
 
           h3.settings-body__engine-item__title
-            | Привод $
+            | Привод 2A1
 
       // settings body
 
@@ -1365,21 +1502,21 @@ h1.title-page
 
               .settings-vals-container
 
-                // input
-
-                .settings-vals-container__input
-                  | $
-
-                // input
-
-                .settings-vals-container__input
-                  | $
-
                 .settings-vals-container__control
                   .settings-vals-container__control_plus.bg-true
                     | +
                   .settings-vals-container__control_minus.bg-false
                     | -
+
+                // input
+
+                .settings-vals-container__input.settings-vals-container__input-write
+                  | 30.0
+
+                // input
+
+                .settings-vals-container__input
+                  | 50.0
 
             // column
 
@@ -1387,21 +1524,22 @@ h1.title-page
 
               .settings-vals-container
 
-                // input
-
-                .settings-vals-container__input
-                  | $
-
-                // input
-
-                .settings-vals-container__input
-                  | $
-
                 .settings-vals-container__control
                   .settings-vals-container__control_plus.bg-true
                     | +
                   .settings-vals-container__control_minus.bg-false
                     | -
+
+
+                // input
+
+                .settings-vals-container__input.settings-vals-container__input-write
+                  | 30.0
+
+                // input
+
+                .settings-vals-container__input
+                  | 50.0
 
             // column
 
@@ -1409,21 +1547,21 @@ h1.title-page
 
               .settings-vals-container           
 
-                // input
-
-                .settings-vals-container__input
-                  | $
-
-                // input
-
-                .settings-vals-container__input
-                  | $
-
                 .settings-vals-container__control
                   .settings-vals-container__control_plus.bg-true
                     | +
                   .settings-vals-container__control_minus.bg-false
                     | -
+
+                // input
+
+                .settings-vals-container__input.settings-vals-container__input-write
+                  | 30.0
+
+                // input
+
+                .settings-vals-container__input
+                  | 50.0
 
             // column
 

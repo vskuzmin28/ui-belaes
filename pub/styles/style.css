@@ -617,10 +617,10 @@ button {
 .current-operation {
   margin-top: 70px;
   position: absolute;
-  height: 16px;
+  height: 18px;
 }
 .current-operation p {
-  font: 14px 'pt_sansregular';
+  font: 16px 'pt_sansregular';
   color: #fff;
 }
 .current-operation p span {
@@ -1233,9 +1233,9 @@ h3.settings-body__engine-item__title {
   overflow: hidden;
 }
 .settings-vals-container__control {
-  margin: -96px 0px 0 10px;
+  margin: 0px 0px 0 10px;
   float: left;
-  width: 100px;
+  width: 96px;
   height: 200px;
 }
 .settings-vals-container__control_name {
@@ -1250,11 +1250,29 @@ h3.settings-body__engine-item__title {
   background: #394264;
   border: 1px solid #50597b;
   border-radius: 4px;
-  font: 32px 'pt_sansbold';
+  font: 42px 'pt_sansbold';
   text-align: center;
   color: #fff;
   line-height: 80px;
   margin-bottom: 14px;
+}
+.settings-vals-container__control_plus:hover,
+.settings-vals-container__control_minus:hover,
+.settings-vals-container__control_plus:focus,
+.settings-vals-container__control_minus:focus {
+  font-size: 42px;
+}
+.settings-vals-container__control_plus:hover,
+.settings-vals-container__control_plus:focus {
+  background: #119da0 !important;
+}
+.settings-vals-container__control_minus {
+  line-height: 74px !important;
+  font-size: 42px !important;
+}
+.settings-vals-container__control_minus:hover,
+.settings-vals-container__control_minus:focus {
+  background: #d6475f !important;
 }
 .settings-vals-container__control_title {
   width: 100%;
@@ -1280,6 +1298,10 @@ h3.settings-body__engine-item__title {
 .settings-vals-container__input:last-child {
   margin-right: 0;
 }
+.settings-vals-container__input:hover,
+.settings-vals-container__input:focus {
+  background: #1f253d;
+}
 .settings-vals-container_button {
   margin: 0 auto !important;
   margin-top: 10px !important;
@@ -1297,6 +1319,13 @@ h3.settings-body__engine-item__title {
   margin: 0 auto;
   margin-top: 36px;
   width: 440px;
+}
+.settings-vals-container__input-write {
+  background: #394264;
+}
+.settings-vals-container__input-write:hover,
+.settings-vals-container__input-write:focus {
+  background: #394264;
 }
 .gateway {
   display: block;
@@ -1509,14 +1538,15 @@ h3.settings-body__engine-item__title {
   background: url('../img/icon-menu.png') no-repeat right;
 }
 .block__indication-plc {
+  width: 94px;
   padding-top: 23px;
   text-align: center;
   height: 180px;
 }
 .block__indication-plc p {
-  margin-top: 4px;
+  margin-top: 8px;
   margin-bottom: 9px;
-  font: 12px 'pt_sansbold';
+  font: 13px 'pt_sansbold';
   text-transform: uppercase;
   color: #fff;
 }
@@ -2114,14 +2144,14 @@ ul.title-zones {
   margin-top: 394px;
   position: absolute;
   width: 100%;
-  height: 14px;
+  height: 16px;
 }
 ul.title-zones li {
   float: left;
-  height: 14px;
-  font: 14px 'pt_sansregular';
+  height: 16px;
+  font: 16px 'pt_sansregular';
   text-align: center;
-  line-height: 14px;
+  line-height: 16px;
   color: #fff;
 }
 ul.title-zones li:nth-child(1) {

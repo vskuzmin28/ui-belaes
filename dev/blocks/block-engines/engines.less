@@ -642,14 +642,13 @@ h3.settings-body__engine-item__title {
 }
 
 .settings-vals-container__control {
-	margin: -96px 0px 0 10px;
+	margin: 0px 0px 0 10px;
 	float: left;
-	width: 100px;
+	width: 96px;
 	height: 200px;
 }
 
 .settings-vals-container__control_name {
-	//margin: -96px 0px 0 20px;
 	float: right;
 	width: 100px;
 	height: 200px;
@@ -664,13 +663,33 @@ h3.settings-body__engine-item__title {
 	border: 1px solid @blue-light;
 	border-radius: 4px;
 
-	font: 32px @pt-bold;
+	font: 42px @pt-bold;
 	text-align: center;
 	color: @white;
-
 	line-height: 80px;
 
+
 	margin-bottom: 14px;
+
+	&:hover, &:focus {
+		font-size: 42px;
+	}
+
+}
+
+.settings-vals-container__control_plus {
+	&:hover, &:focus {
+		background: #119da0 !important;
+	}
+}
+
+.settings-vals-container__control_minus {
+	line-height: 74px !important;
+	font-size: 42px !important;
+
+	&:hover, &:focus {
+		background: #d6475f !important;
+	}
 }
 
 .settings-vals-container__control_title {
@@ -707,6 +726,10 @@ h3.settings-body__engine-item__title {
 		margin-right: 0;
 	}
 
+	&:hover, &:focus {
+		background: @blue-dark;
+	}
+
 }
 
 .settings-vals-container_button {
@@ -728,4 +751,13 @@ h3.settings-body__engine-item__title {
 	margin: 0 auto;
 	margin-top: 36px;
 	width: 440px;
+}
+
+.settings-vals-container__input-write {
+	background: @blue;
+
+	&:hover, &:focus {
+		background: @blue;
+	}
+
 }
